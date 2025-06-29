@@ -69,7 +69,8 @@ exports.loginUser = async (req, res) => {
       login: user.login,
       role: role,
       success: success,
-      token: generateToken(user._id, role)
+      token: generateToken(user._id, role),
+      hello:"world"
 
     })
   } catch (error) {
